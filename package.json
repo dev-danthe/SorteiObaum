@@ -1,15 +1,26 @@
 {
-  "name": "SorteiObaum",
-  "version": "3.0.0",
+  "name": "sorteiobaum",
+  "version": "4.0.0",
   "description": "Para sortear nomes na live do Dragão de leite.",
   "main": "main",
   "scripts": {
-    "start": "electron ."
+    "start": "electron .",
+    "package": "electron-builder"
   },
   "keywords": [],
-  "author": "",
+  "author": "Danthe, Zinnk",
   "license": "ISC",
   "devDependencies": {
-    "electron": "^30.0.1"
+    "asar": "^3.2.0",
+    "electron": "^30.0.1",
+    "electron-builder": "^25.0.5"
+  },
+  "build": {
+    "appId": "com.danthedev.sorteiobaum",
+    "productName": "SorteiObaum",
+    "win": {
+      "asar": true,
+      "icon": "assets/icon.ico"
+  }
   }
 }

@@ -1199,3 +1199,33 @@ iframe {
   width: -webkit-fill-available;
   height: -webkit-fill-available;
 }
+
+@keyframes rotate360 {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.rotate {
+  animation: rotate360 0.3s linear;
+}
+
+zinnk {
+  position: absolute;
+  margin-left: 190px;
+  font-size: 40px;
+}
+
+zinnk div {
+  margin-top: -20px;
+}
+
+zinnk img {
+  width: 57px;
+  position: fixed;
+  margin-top: -45px;
+  margin-left: 15px;
+}

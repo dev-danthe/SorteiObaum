@@ -36,8 +36,11 @@ document.querySelector('iframe').addEventListener('load', function() {
 });
 
 document.querySelector('iframe').addEventListener('load', function() {
-    if (this.contentWindow.location.href === "file:///E:/SorteiObaum2/pages/inicio.html") {
+  const basePath = window.location.origin + window.location.pathname.replace(/\/[^\/]*$/, '/');
+  const targetPath = basePath + "pages/inicio.html";
+  
+  if (this.contentWindow.location.href === targetPath) {
       let audio = document.getElementById('backgroundMusic');
       audio.play();
-    }
-  });
+  }
+});
